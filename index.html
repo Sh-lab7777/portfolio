@@ -119,9 +119,9 @@ section{padding:6rem 4rem;}
 .tag-cyan{background:rgba(6,182,212,0.1);border-color:rgba(6,182,212,0.3);color:#22d3ee;}
 .tag-rose{background:rgba(244,63,94,0.1);border-color:rgba(244,63,94,0.3);color:#fb7185;}
 
-/* ── PROJECTS (both sections share these) ── */
 #projects{background:var(--bg2);}
-#academic{background:var(--bg);}
+#opensource{background:var(--bg);}
+#academic{background:var(--bg2);}
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin-top:3rem;}
 .project-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;transition:all 0.3s;position:relative;overflow:hidden;}
 .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--accent3));opacity:0;transition:opacity 0.3s;}
@@ -137,7 +137,6 @@ section{padding:6rem 4rem;}
 .project-link:hover{border-color:var(--pink);color:var(--pink);}
 .project-link.primary{background:linear-gradient(135deg,var(--pink),var(--accent2));color:white;border:none;}
 
-/* Academic card variant */
 .academic-card{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;transition:all 0.3s;position:relative;overflow:hidden;}
 .academic-card::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent2),var(--pink));opacity:0;transition:opacity 0.3s;}
 .academic-card:hover{border-color:var(--accent2);transform:translateY(-4px);box-shadow:0 16px 40px rgba(124,58,237,0.12);}
@@ -242,6 +241,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#opensource">Open Source</a></li>
     <li><a href="#academic">Academic</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#location">Resume</a></li>
@@ -431,9 +431,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     CORPORATE PROJECTS
-════════════════════════════════════════════ -->
+<!-- CORPORATE PROJECTS -->
 <section id="projects">
   <div class="container">
     <div class="fade-in" style="text-align:center;margin-bottom:1rem;">
@@ -443,7 +441,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
     </div>
     <div class="projects-grid fade-in">
 
-      <!-- ArthaAI -->
       <div class="project-card">
         <div class="project-icon">💰</div>
         <div class="project-title">ArthaAI — NL Interface for Tally ERP</div>
@@ -461,7 +458,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- AI Smart OCR -->
       <div class="project-card">
         <div class="project-icon">🔍</div>
         <div class="project-title">AI Smart OCR — Multilingual Digitizer</div>
@@ -479,7 +475,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- Agreement Generator -->
       <div class="project-card">
         <div class="project-icon">📝</div>
         <div class="project-title">Pustaka Agreement Generator</div>
@@ -496,7 +491,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- BookCraft Pro -->
       <div class="project-card">
         <div class="project-icon">📚</div>
         <div class="project-title">BookCraft Pro — Bilingual AI Generator</div>
@@ -514,7 +508,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- S3 EPUB Automation -->
       <div class="project-card">
         <div class="project-icon">☁️</div>
         <div class="project-title">Channel-wise S3 EPUB Automation</div>
@@ -531,7 +524,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- AI Chatbot MCP RAG -->
       <div class="project-card">
         <div class="project-icon">🤖</div>
         <div class="project-title">AI Chatbot — MCP & RAG</div>
@@ -553,9 +545,87 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
   </div>
 </section>
 
-<!-- ══════════════════════════════════════════
-     ACADEMIC PROJECTS
-════════════════════════════════════════════ -->
+<!-- OPEN SOURCE PROJECTS -->
+<section id="opensource">
+  <div class="container">
+    <div class="fade-in" style="text-align:center;margin-bottom:1rem;">
+      <p class="section-label" style="justify-content:center;display:flex;">🐙 GitHub</p>
+      <h2 class="section-title">Open Source <span>Projects</span></h2>
+      <p style="color:var(--muted);max-width:600px;margin:0 auto;">Personal projects built to explore ML, AI agents, and full-stack product development.</p>
+    </div>
+    <div class="projects-grid fade-in">
+
+      <div class="project-card">
+        <div class="project-icon">🧾</div>
+        <div class="project-title">InvoiceFlow — SaaS Billing System</div>
+        <div class="project-desc">Production-ready invoice management SaaS with JWT auth, GST calculation, auto PDF generation (WeasyPrint), SendGrid email delivery, Stripe payment tracking, and a Groq AI assistant (Llama-3.3-70B) that answers invoice queries in Tamil & English. Fully Dockerized with FastAPI + React + PostgreSQL.</div>
+        <div class="project-tags">
+          <span class="skill-tag tag-blue">FastAPI · React · Vite</span>
+          <span class="skill-tag tag-green">PostgreSQL · SQLAlchemy</span>
+          <span class="skill-tag tag-purple">Stripe · SendGrid</span>
+          <span class="skill-tag tag-rose">Groq Llama-3.3-70B</span>
+          <span class="skill-tag tag-cyan">Docker · JWT</span>
+          <span class="skill-tag tag-pink">Tamil/English AI 🌐</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sh-lab7777/invoiceflow" target="_blank" class="project-link primary">GitHub ↗</a>
+          <span class="project-link">FastAPI + React</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">📊</div>
+        <div class="project-title">Finance AI Tracker</div>
+        <div class="project-desc">Personal finance tracker with ML auto-categorization of transactions using TF-IDF + Naive Bayes. Features a 5-tab Streamlit dashboard with spending insights, budget tracker, monthly trends, and a live model tester. Works with any bank CSV export — 8 spending categories auto-tagged.</div>
+        <div class="project-tags">
+          <span class="skill-tag tag-green">Python · Streamlit</span>
+          <span class="skill-tag tag-blue">TF-IDF · Naive Bayes</span>
+          <span class="skill-tag tag-cyan">8 Categories</span>
+          <span class="skill-tag tag-amber">5-Tab Dashboard</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sh-lab7777/finance-ai-tracker" target="_blank" class="project-link primary">GitHub ↗</a>
+          <span class="project-link">ML · Finance</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🎭</div>
+        <div class="project-title">Sentiment Analysis — NLP</div>
+        <div class="project-desc">Classifies movie & product reviews as Positive or Negative using TF-IDF and 5 ML models — Logistic Regression, SVM, Naive Bayes, Random Forest, and Gradient Boosting. Includes word influence charts, model comparison, and batch CSV prediction via Streamlit.</div>
+        <div class="project-tags">
+          <span class="skill-tag tag-green">Python · scikit-learn</span>
+          <span class="skill-tag tag-blue">NLTK · TF-IDF</span>
+          <span class="skill-tag tag-amber">Streamlit</span>
+          <span class="skill-tag tag-pink">5 ML Models</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sh-lab7777/sentiment-analysis-nlp" target="_blank" class="project-link primary">GitHub ↗</a>
+          <span class="project-link">NLP · ML</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🤖</div>
+        <div class="project-title">OpenEnv — AI Support Agent</div>
+        <div class="project-desc">Reinforcement learning environment where an AI agent learns to classify, prioritize, and resolve customer support tickets. Built to OpenEnv spec with FastAPI step/reset/state endpoints, Docker deployment, and rubric-based reward scoring. Achieves perfect 1.0 reward on task_resolve.</div>
+        <div class="project-tags">
+          <span class="skill-tag tag-pink">AI Agent · RL Env</span>
+          <span class="skill-tag tag-blue">FastAPI · Python</span>
+          <span class="skill-tag tag-purple">Docker · HF Spaces</span>
+          <span class="skill-tag tag-cyan">Score: 1.0 🏆</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Sh-lab7777/openenv-support" target="_blank" class="project-link primary">GitHub ↗</a>
+          <span class="project-link">RL · Agent</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ACADEMIC PROJECTS -->
 <section id="academic">
   <div class="container">
     <div class="fade-in" style="text-align:center;margin-bottom:1rem;">
@@ -566,7 +636,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
 
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-top:3rem;" class="fade-in">
 
-      <!-- Medical Bot -->
       <div class="academic-card">
         <div class="academic-badge">🎓 Final Year Project</div>
         <div class="academic-icon">🏥</div>
@@ -588,7 +657,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- Student Information System -->
       <div class="academic-card">
         <div class="academic-badge">🔬 Mini Project</div>
         <div class="academic-icon">🎓</div>
@@ -604,7 +672,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
         </div>
       </div>
 
-      <!-- QoS Research Paper -->
       <div class="academic-card">
         <div class="academic-badge">💡 Research Paper</div>
         <div class="academic-icon">📡</div>
@@ -624,7 +691,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2rem 4re
 
     </div>
 
-    <!-- Education Cards -->
     <div class="fade-in" style="margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;">
       <div style="background:var(--card);border:1px solid var(--border);border-radius:20px;padding:2rem;display:flex;align-items:center;gap:1.5rem;transition:all 0.3s;" onmouseenter="this.style.borderColor='var(--pink)'" onmouseleave="this.style.borderColor='var(--border)'">
         <div style="font-size:2.5rem;">🏛️</div>
