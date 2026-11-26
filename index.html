@@ -3,212 +3,248 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Sharan Shriney D, AI/ML Engineer</title>
-<meta name="description" content="AI/ML engineer building LLM agents, RAG pipelines and Tamil/English language systems that run in production."/>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;600;800&family=Noto+Sans+Tamil:wght@500;700&display=swap" rel="stylesheet"/>
+<title>Sharan Shriney D | AI/ML Engineer</title>
+<meta name="description" content="AI/ML engineer building LLM agents, RAG pipelines and production AI systems."/>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
 <style>
-:root{--paper:#f5f2ff;--wash:#ebe5ff;--ink:#1d1637;--soft:#5d5680;--violet:#5b3fd1;--mint:#0b8a72;--coral:#d9442d;--line:#d6cdf0}
+:root{--bg:#050810;--bg2:#0b0f1a;--a:#4f8ef7;--v:#7c3aed;--c:#06b6d4;--g:#10b981;--y:#f59e0b;--p:#ec4899;--t:#f0f4ff;--m:#8b96b0;--b:rgba(255,255,255,.08);--card:rgba(255,255,255,.04)}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:1.02rem;line-height:1.65;display:grid;grid-template-columns:300px minmax(0,1fr)}
-a{color:var(--violet);text-underline-offset:3px}
-a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--violet);outline-offset:3px;border-radius:4px}
-aside{position:sticky;top:0;height:100vh;padding:2.5rem 2rem;display:flex;flex-direction:column;gap:1.6rem;background:var(--wash);border-right:1px solid var(--line)}
-.brand{font-weight:800;font-size:1.5rem;line-height:1.1;letter-spacing:-.02em;color:var(--ink);text-decoration:none}
-.role{color:var(--soft);font-size:.95rem}
-nav{display:flex;flex-direction:column;gap:.15rem}
-nav a{color:var(--ink);text-decoration:none;padding:.3rem 0 .3rem .9rem;border-left:2px solid var(--line);font-weight:600;font-size:.95rem;transition:border-color .2s,padding .2s}
-nav a:hover,nav a.on{border-color:var(--violet);padding-left:1.3rem;color:var(--violet)}
-.side-cta{display:flex;flex-direction:column;gap:.6rem;margin-top:auto}
-.btn{display:inline-block;background:var(--ink);color:var(--paper);padding:.7rem 1.2rem;border-radius:10px;text-decoration:none;font-weight:600;text-align:center}
-.btn:hover{background:var(--violet)}
-.btn.alt{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.btn.alt:hover{background:var(--ink);color:var(--paper)}
-.loc{font-size:.85rem;color:var(--soft)}
-main{padding:4.5rem 4rem 3rem;max-width:880px}
-section{padding:3.2rem 0;border-top:1px solid var(--line)}
-section:first-of-type{border-top:0;padding-top:0}
-h1{font-size:clamp(2.4rem,5.2vw,4.4rem);line-height:1.02;font-weight:800;letter-spacing:-.035em;font-variation-settings:'opsz' 96;max-width:14em}
-.ta{font-family:'Noto Sans Tamil',sans-serif;font-weight:500;font-size:1.15rem;color:var(--violet);margin:1.4rem 0 1.6rem}
-.lead{font-size:1.15rem;max-width:36em;color:#352c58}
-.lead b{color:var(--ink)}
-h2{font-size:1.9rem;font-weight:800;letter-spacing:-.02em;margin-bottom:.4rem}
-.sub{color:var(--soft);max-width:36em;margin-bottom:1.6rem}
-.chips{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.2rem}
-.chips button{font:inherit;font-size:.9rem;font-weight:600;padding:.35rem .95rem;border-radius:99px;border:1.5px solid var(--line);background:transparent;color:var(--soft);cursor:pointer}
-.chips button[aria-pressed=true]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.row{border-bottom:1px solid var(--line)}
-.row[hidden]{display:none}
-.row summary{display:grid;grid-template-columns:7rem 1fr auto 1.2rem;gap:1rem;align-items:baseline;padding:1rem 0;cursor:pointer;list-style:none}
-.row summary::-webkit-details-marker{display:none}
-.row summary::after{content:'+';font-size:1.3rem;line-height:1;color:var(--violet);transition:transform .25s}
-.row[open] summary::after{transform:rotate(45deg)}
-.y{color:var(--soft);font-size:.9rem}
-.t{font-weight:600;font-size:1.12rem}
-.k{font-size:.82rem;color:var(--soft)}
-.new{color:var(--coral);font-weight:800;font-size:.8rem;margin-left:.5rem}
-.row:hover .t{color:var(--violet)}
-.b{padding:0 0 1.3rem 8rem;max-width:44em}
-.b p{color:#352c58}
-.b .g{color:var(--mint);font-weight:600;font-size:.92rem;margin:.5rem 0 .6rem}
-dl{display:grid;grid-template-columns:11rem 1fr;gap:.9rem 1.5rem}
-dt{font-weight:800}
-dd{color:#352c58}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
-.two h3,.ed h3{font-size:1.05rem;font-weight:800;margin-bottom:.5rem}
+body{background:var(--bg);color:var(--t);font-family:'DM Sans',sans-serif;overflow-x:hidden;line-height:1.7}
+a:focus-visible,button:focus-visible{outline:2px solid var(--c);outline-offset:3px}
+#fx{position:fixed;inset:0;z-index:0;pointer-events:none}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;z-index:200;background:linear-gradient(90deg,var(--p),var(--a),var(--c));box-shadow:0 0 12px var(--p)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1rem 4rem;backdrop-filter:blur(20px);background:rgba(5,8,16,.8);border-bottom:1px solid var(--b)}
+.logo,.g{font-family:Syne,sans-serif;font-weight:800;background:linear-gradient(135deg,var(--p),var(--a),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo{font-size:1.3rem}
+nav ul{display:flex;gap:1.8rem;list-style:none}
+nav a{color:var(--m);text-decoration:none;font-size:.88rem;font-weight:500;transition:color .3s}
+nav a:hover,nav a.on{color:var(--t)}
+nav .cta{background:linear-gradient(135deg,var(--p),var(--v));color:#fff;padding:.45rem 1.2rem;border-radius:50px}
+section{position:relative;z-index:1;padding:6rem 4rem}
+.w{max-width:1100px;margin:0 auto}
+.lab{font:500 .78rem 'JetBrains Mono',monospace;color:var(--p);letter-spacing:.12em;margin-bottom:.6rem}
+h2{font:800 clamp(2rem,4vw,3rem)/1.1 Syne,sans-serif;margin-bottom:1rem}
+.sub{color:var(--m);max-width:620px;margin-bottom:2rem}
+.alt{background:rgba(11,15,26,.85)}
+#hero{min-height:100vh;display:flex;align-items:center;overflow:hidden;padding-top:7rem}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.16;animation:fl 9s ease-in-out infinite alternate}
+.o1{width:560px;height:560px;background:var(--p);top:-180px;right:-100px}
+.o2{width:420px;height:420px;background:var(--v);bottom:-120px;left:-100px;animation-duration:12s}
+.o3{width:300px;height:300px;background:var(--c);top:45%;left:35%;animation-duration:7s}
+@keyframes fl{to{transform:translate(30px,-40px)}}
+.hi{position:relative;display:flex;align-items:center;justify-content:space-between;gap:3rem;width:100%;max-width:1100px;margin:0 auto}
+.bd{display:inline-flex;align-items:center;gap:.5rem;border:1px solid rgba(236,72,153,.35);background:rgba(236,72,153,.1);color:var(--p);padding:.35rem 1rem;border-radius:50px;font:.8rem 'JetBrains Mono',monospace;margin-bottom:1.4rem}
+.bd::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--g);box-shadow:0 0 8px var(--g);animation:pl 2s infinite}
+@keyframes pl{50%{opacity:.4;transform:scale(.7)}}
+h1{font:800 clamp(2.8rem,6.4vw,5rem)/1.02 Syne,sans-serif;margin-bottom:.8rem;background:linear-gradient(110deg,var(--p),var(--a),var(--c),var(--p));background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite}
+@keyframes sh{to{background-position:-250% 0}}
+.role{font-size:1.15rem;color:var(--m);min-height:1.9em;margin-bottom:1rem}
+.role b{color:var(--t);font-weight:500}
+.cur{display:inline-block;width:2px;height:1.1em;background:var(--p);margin-left:2px;vertical-align:middle;animation:bl .8s infinite}
+@keyframes bl{50%{opacity:0}}
+.desc{color:var(--m);max-width:520px;margin-bottom:2.2rem}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{padding:.8rem 1.9rem;border-radius:50px;font-weight:500;font-size:.92rem;text-decoration:none;color:#fff;border:1px solid var(--b);transition:transform .3s,box-shadow .3s}
+.btn:hover{transform:translateY(-3px)}
+.b1{background:linear-gradient(135deg,var(--p),var(--v));border:0}.b1:hover{box-shadow:0 10px 30px rgba(236,72,153,.4)}
+.b2{background:linear-gradient(135deg,var(--g),var(--c));border:0}.b2:hover{box-shadow:0 10px 30px rgba(16,185,129,.35)}
+.btn.o:hover{border-color:var(--p);color:var(--p)}
+.stage{flex:0 0 400px;perspective:900px}
+.hc{position:relative;background:linear-gradient(135deg,rgba(236,72,153,.08),rgba(124,58,237,.1));border:1px solid rgba(236,72,153,.25);border-radius:24px;padding:1.6rem;font:.84rem/1.9 'JetBrains Mono',monospace;transform-style:preserve-3d;transition:transform .15s;box-shadow:0 30px 80px rgba(124,58,237,.25);backdrop-filter:blur(10px)}
+.dots{display:flex;gap:6px;margin-bottom:1rem}.dots i{width:10px;height:10px;border-radius:50%;background:var(--p)}.dots i:nth-child(2){background:var(--y)}.dots i:nth-child(3){background:var(--g)}
+.k{color:var(--p)}.s{color:var(--g)}.n{color:var(--c)}
+.fb{position:absolute;background:rgba(11,15,26,.95);border:1px solid var(--b);border-radius:12px;padding:.5rem .9rem;font:.74rem 'JetBrains Mono',monospace;transform:translateZ(50px);animation:fb 3.5s ease-in-out infinite alternate}
+.f1{top:-18px;right:-14px;color:var(--a)}.f2{bottom:26px;left:-26px;color:var(--p);animation-delay:.8s}.f3{bottom:-16px;right:20px;color:var(--y);animation-delay:1.6s}
+@keyframes fb{to{margin-top:-9px}}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:3rem;position:relative}
+.stat{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:1.3rem;text-align:center}
+.num{font:800 2.2rem Syne,sans-serif;background:linear-gradient(135deg,var(--p),var(--c));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sl{font-size:.82rem;color:var(--m)}
+.card{position:relative;background:var(--card);border:1px solid var(--b);border-radius:20px;padding:1.8rem;overflow:hidden;transition:transform .3s,border-color .3s}
+.card::before{content:'';position:absolute;inset:0;background:radial-gradient(320px circle at var(--x,50%) var(--y,50%),rgba(236,72,153,.14),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover{transform:translateY(-5px);border-color:rgba(236,72,153,.55)}
+.card:hover::before{opacity:1}
+.ab{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.ab p{color:var(--m);margin-bottom:1rem}.ab strong{color:var(--t)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.4rem}
+.ct{font:700 1rem Syne,sans-serif;margin-bottom:1rem}
+.tg{display:flex;flex-wrap:wrap;gap:.45rem}
+.tg span{padding:.3rem .75rem;border-radius:50px;font:.76rem 'JetBrains Mono',monospace;border:1px solid;transition:transform .25s}
+.tg span:hover{transform:scale(1.06)}
+.c0{color:#f472b6;border-color:rgba(236,72,153,.3);background:rgba(236,72,153,.08)}
+.c1{color:#7eb3ff;border-color:rgba(79,142,247,.3);background:rgba(79,142,247,.08)}
+.c2{color:#a78bfa;border-color:rgba(124,58,237,.3);background:rgba(124,58,237,.08)}
+.c3{color:#34d399;border-color:rgba(16,185,129,.3);background:rgba(16,185,129,.08)}
+.c4{color:#fbbf24;border-color:rgba(245,158,11,.3);background:rgba(245,158,11,.08)}
+.c5{color:#22d3ee;border-color:rgba(6,182,212,.3);background:rgba(6,182,212,.08)}
+.tabs{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:2rem}
+.tabs button{font:500 .86rem 'DM Sans',sans-serif;padding:.5rem 1.2rem;border-radius:50px;border:1px solid var(--b);background:var(--card);color:var(--m);cursor:pointer;transition:all .3s}
+.tabs button[aria-pressed=true]{background:linear-gradient(135deg,var(--p),var(--v));color:#fff;border-color:transparent;box-shadow:0 6px 20px rgba(236,72,153,.3)}
+.pc{display:flex;flex-direction:column;animation:in .5s both}
+@keyframes in{from{opacity:0;transform:translateY(18px)}}
+.pc[hidden]{display:none}
+.pt{display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem;font-size:1.8rem}
+.yr{font:.74rem 'JetBrains Mono',monospace;color:var(--m)}
+.new{font:500 .7rem 'JetBrains Mono',monospace;color:#fff;background:linear-gradient(135deg,var(--p),var(--v));padding:.15rem .6rem;border-radius:50px;margin-left:.4rem;animation:pl 2s infinite}
+.pc h3{font:700 1.12rem Syne,sans-serif;margin-bottom:.5rem}
+.pc p{color:var(--m);font-size:.9rem;margin-bottom:1rem;flex:1}
+.pc .tg{margin-bottom:1.2rem}
+.lk{align-self:flex-start;padding:.4rem 1.1rem;border-radius:50px;font-size:.8rem;text-decoration:none;color:#fff;background:linear-gradient(135deg,var(--p),var(--v))}
+.st{align-self:flex-start;padding:.4rem 1.1rem;border-radius:50px;font-size:.8rem;color:var(--m);border:1px solid var(--b)}
+.tl{position:relative;padding-left:2rem;margin-top:2rem}
+.tl::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(var(--p),var(--v))}
+.tl::after{content:'';position:absolute;left:-5px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--p);box-shadow:0 0 14px var(--p)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.tl h3{font:700 1.2rem Syne,sans-serif}.tl small{color:var(--p);font-family:'JetBrains Mono',monospace}
 ul{list-style:none}
-li{padding:.28rem 0 .28rem 1.1rem;position:relative;color:#352c58}
-li::before{content:'';position:absolute;left:0;top:.95em;width:6px;height:6px;border-radius:50%;background:var(--violet)}
-.when{color:var(--soft);font-size:.9rem;margin-bottom:1rem}
-.ed{display:grid;gap:1.4rem}
-.ed p{color:#352c58}
-.ed small{color:var(--soft);display:block}
-.links{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.2rem}
-footer{padding:2rem 0 0;color:var(--soft);font-size:.85rem}
-.in{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-.in:nth-child(2){animation-delay:.12s}.in:nth-child(3){animation-delay:.24s}.in:nth-child(4){animation-delay:.36s}
-@keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
-@media(max-width:900px){body{display:block}aside{position:static;height:auto;border-right:0;border-bottom:1px solid var(--line);padding:1.5rem}nav{flex-direction:row;flex-wrap:wrap;gap:.4rem 1rem}nav a{border:0;padding:.1rem 0}nav a:hover,nav a.on{padding-left:0}.side-cta{flex-direction:row;flex-wrap:wrap;margin-top:0}main{padding:2.5rem 1.5rem}.row summary{grid-template-columns:1fr 1.2rem}.y,.k{grid-column:1}.row summary::after{grid-column:2;grid-row:1}.b{padding-left:0}dl{grid-template-columns:1fr;gap:.2rem}dd{margin-bottom:.8rem}.two{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+li{position:relative;padding:.3rem 0 .3rem 1.2rem;color:var(--m);font-size:.92rem}
+li::before{content:'▸';position:absolute;left:0;color:var(--p)}
+.aws{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.aws .card{padding:1.2rem}.aws b{font:700 .9rem Syne,sans-serif;display:block}.aws span{color:var(--m);font-size:.8rem}
+.rg{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.rg h3{font:700 1.3rem Syne,sans-serif;margin-bottom:.6rem}
+.rg .li{display:flex;gap:.7rem;color:var(--m);font-size:.9rem;padding:.25rem 0}.rg b{color:var(--t)}
+.dl{display:flex;justify-content:center;margin-top:1.4rem;background:linear-gradient(135deg,var(--p),var(--v));color:#fff;padding:.85rem 1.8rem;border-radius:50px;font-weight:500;text-decoration:none;transition:transform .3s,box-shadow .3s}
+.dl:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(236,72,153,.4)}
+.cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.cg .card{padding:1.3rem}.cg b{font:700 .95rem Syne,sans-serif;display:block}.cg span{color:var(--m);font-size:.82rem}
+#contact{text-align:center}
+.cc{max-width:640px;margin:0 auto;padding:2.6rem}
+.cl{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem}
+footer{position:relative;z-index:1;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.8rem 4rem;color:var(--m);font-size:.85rem;border-top:1px solid var(--b);background:var(--bg2)}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}.rv.on{opacity:1;transform:none}
+@media(max-width:900px){.hi{flex-direction:column}.stage{display:none}.stats{grid-template-columns:1fr 1fr}.ab,.cols,.rg{grid-template-columns:1fr}}
+@media(max-width:768px){nav{padding:1rem 1.2rem}nav ul li:not(:last-child){display:none}section{padding:4rem 1.2rem}footer{padding:1.5rem 1.2rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
+<canvas id="fx" aria-hidden="true"></canvas><div id="bar"></div>
+<nav><div class="logo">SS</div><ul>
+<li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#education">Education</a></li><li><a href="#certs">Certs</a></li><li><a href="#contact" class="cta">Hire me</a></li></ul></nav>
 
-<aside>
-  <a class="brand" href="#top">Sharan<br>Shriney D</a>
-  <p class="role">AI/ML Engineer<br>Generative AI, LLM agents, RAG</p>
-  <nav aria-label="Sections">
-    <a href="#work">Work</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#education">Education and research</a><a href="#certs">Certifications</a><a href="#contact">Contact</a>
-  </nav>
-  <div class="side-cta">
-    <a class="btn" href="Sharan_Shriney_AI-ML-Engineer.pdf" download>Download resume</a>
-    <a class="btn alt" href="mailto:shrinejehovah@gmail.com">Email me</a>
+<section id="hero">
+  <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  <div class="w" style="position:relative">
+    <div class="hi">
+      <div>
+        <div class="bd">Open to AI/ML roles</div>
+        <h1>Sharan<br/>Shriney D</h1>
+        <p class="role"><b id="ty"></b><span class="cur"></span></p>
+        <p class="desc">I build AI systems that ship: LLM agents, RAG pipelines, ERP chatbots and multilingual OCR, used every day by operations teams at Pustaka Media.</p>
+        <div class="btns"><a href="#projects" class="btn b1">View projects</a><a href="Sharan_Shriney_AI-ML-Engineer.pdf" download class="btn b2">Download resume</a><a href="#contact" class="btn o">Get in touch</a></div>
+      </div>
+      <div class="stage"><div class="hc" id="hc">
+        <div class="fb f1">LangGraph</div><div class="fb f2">MCP, 32 tools</div><div class="fb f3">AWS Lambda</div>
+        <div class="dots"><i></i><i></i><i></i></div>
+<span class="k">engineer</span> = {<br/>
+&nbsp;<span class="s">"role"</span>: <span class="s">"AI/ML Engineer"</span>,<br/>
+&nbsp;<span class="s">"stack"</span>: [<span class="n">"LangGraph"</span>, <span class="n">"MCP"</span>,<br/>
+&nbsp;&nbsp;<span class="n">"PyTorch"</span>, <span class="n">"AWS"</span>],<br/>
+&nbsp;<span class="s">"building"</span>: <span class="s">"LLM eval harness"</span>,<br/>
+&nbsp;<span class="s">"open_to"</span>: <span class="s">"remote, relocation"</span><br/>}
+      </div></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="num" data-n="2.5">0</div><div class="sl">Years experience</div></div>
+      <div class="stat"><div class="num" data-n="32">0</div><div class="sl">MCP tools built</div></div>
+      <div class="stat"><div class="num" data-n="22">0</div><div class="sl">Indian languages in OCR</div></div>
+      <div class="stat"><div class="num" data-n="150">0</div><div class="sl">Bugs resolved</div></div>
+    </div>
   </div>
-  <p class="loc">Dindigul, Tamil Nadu, India<br>Open to remote, hybrid and relocation</p>
-</aside>
+</section>
 
-<main id="top">
-  <section>
-    <h1 class="in">I build language AI that people at work actually use.</h1>
-    <p class="ta in">தமிழிலும் ஆங்கிலத்திலும் இயங்கும் AI அமைப்புகளை உருவாக்குகிறேன்.</p>
-    <p class="lead in">I’m an AI/ML engineer with <b>2.5+ years</b> at Pustaka Media in Bangalore. I’ve shipped an MCP-based enterprise chatbot, a natural-language ERP interface with <b>32 custom MCP tools</b>, OCR for <b>22 Indian languages</b>, and AI document tools the operations team uses every day. I’m now building a serverless AI backend on AWS Lambda and a harness that tests which model and prompt work best for Tamil and English.</p>
-  </section>
+<section id="about" class="alt"><div class="w rv"><div class="ab">
+  <div><p class="lab">About</p><h2>Building AI that <span class="g">ships</span></h2>
+  <p>I’m an <strong>AI/ML engineer with 2.5+ years</strong> of experience delivering LLM-powered applications and full-stack products, currently at <strong>Pustaka Media, Bangalore</strong>.</p>
+  <p>My stack covers <strong>LangChain, LangGraph, LangSmith, MCP</strong>, Amazon Bedrock Knowledge Base, FAISS, GPT-4, Claude, Groq LLaMA and Gemma, plus <strong>PyTorch</strong> and scikit-learn for model work, all deployed on AWS.</p>
+  <p>I hold an <strong>MCA (CGPA 8.2)</strong> from St. Joseph’s College, Trichy, and a BCA (CGPA 8.9) from Parvathy’s Arts and Science College, Dindigul.</p></div>
+  <div class="card"><p class="ct">Right now</p><ul>
+    <li>Building a serverless Python backend on AWS Lambda and a React and TypeScript website for a mobile app with an AI chatbot</li>
+    <li>Testing which models and prompts work best with an LLM evaluation harness</li>
+    <li>Fine-tuning multilingual transformers in PyTorch</li></ul></div>
+</div></div></section>
 
-  <section id="work">
-    <h2>Work</h2>
-    <p class="sub">Production systems from Pustaka Media, ML and deep learning projects, and open source. Select a row to read more.</p>
-    <div class="chips" id="chips">
-      <button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="pro">Production</button><button aria-pressed="false" data-f="ml">AI and ML</button><button aria-pressed="false" data-f="oss">Open source</button>
-    </div>
-    <div id="rows"></div>
-  </section>
+<section id="skills"><div class="w rv"><p class="lab">Tech stack</p><h2>What I <span class="g">work with</span></h2><div class="grid" id="sk"></div></div></section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p class="sub">What I reach for, grouped by the job it does.</p>
-    <dl>
-      <dt>LLMs and models</dt><dd>OpenAI GPT-3.5 and GPT-4, Claude, Groq-hosted LLaMA-3 and 4, gpt-oss, Qwen, Google Gemma 4 31B, Gemini Vision, Sarvam AI</dd>
-      <dt>Agents and RAG</dt><dd>LangChain, LangGraph, LangSmith, MCP (Model Context Protocol), Amazon Bedrock Knowledge Base, FAISS, DuckDB caching</dd>
-      <dt>Evaluation</dt><dd>LLM-as-judge scoring, deterministic output checks, latency benchmarking, prompt regression testing</dd>
-      <dt>Machine learning</dt><dd>PyTorch (custom training loops, CNNs), Hugging Face Transformers fine-tuning, scikit-learn, TF-IDF, model evaluation with F1 and confusion matrices, reinforcement learning environments</dd>
-      <dt>Backend and cloud</dt><dd>Python, Flask, FastAPI, REST APIs, Node.js, AWS Lambda, EC2, S3, RDS, CloudWatch, SNS, ALB, Auto Scaling, Route 53, MySQL</dd>
-      <dt>Frontend and desktop</dt><dd>React, TypeScript, JavaScript, Electron, Streamlit, CustomTkinter, HTML and CSS</dd>
-      <dt>Ways of working</dt><dd>Git, Docker, pytest, project planning and stakeholder management</dd>
-    </dl>
-  </section>
+<section id="projects" class="alt"><div class="w rv"><p class="lab">Work</p><h2>Selected <span class="g">projects</span></h2>
+<p class="sub">Production systems from Pustaka Media, ML and deep learning work, and open source.</p>
+<div class="tabs" id="tabs"><button aria-pressed="true" data-f="all">All</button><button aria-pressed="false" data-f="pro">Production</button><button aria-pressed="false" data-f="ml">AI and ML</button><button aria-pressed="false" data-f="oss">Open source</button></div>
+<div class="grid" id="pj"></div></div></section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <p class="when">Software Engineer, AI and Python Development, Pustaka Media Pvt Ltd, Bangalore, 2024 to present</p>
-    <div class="two">
-      <div>
-        <h3>AI and cloud</h3>
-        <ul>
-          <li>Deployed an MCP, LangChain and Claude/GPT-4 chatbot for enterprise teams</li>
-          <li>Built a multi-format RAG pipeline on Amazon Bedrock Knowledge Base and FAISS</li>
-          <li>Orchestrated multi-step workflows with LangGraph, traced with LangSmith</li>
-          <li>Cut chatbot latency with Groq-hosted LLaMA-3 inference</li>
-          <li>Set up ALB, Auto Scaling, CloudWatch alarms and SNS alerts; wrote Python Lambda functions</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Full stack</h3>
-        <ul>
-          <li>Built React and Flask dashboards for a storytelling platform with thousands of active users</li>
-          <li>Automated channel-wise S3 EPUB downloads end to end</li>
-          <li>Cut manual story-processing effort by about 60% with Python and SQL scheduled jobs</li>
-          <li>Resolved 150+ bugs and feature requests across product, QA and design</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<section id="experience"><div class="w rv"><p class="lab">Career</p><h2>Experience</h2>
+<div class="tl"><small>2024 to present</small><h3>Software Engineer, AI and Python Development</h3><p style="color:var(--m)">Pustaka Media Pvt Ltd, Bangalore</p>
+<div class="cols" style="margin-top:1rem"><div><p class="ct">AI and cloud</p><ul>
+<li>Deployed an MCP, LangChain and Claude/GPT-4 chatbot for enterprise teams</li><li>Built a multi-format RAG pipeline on Bedrock Knowledge Base and FAISS</li><li>Orchestrated LangGraph workflows, traced with LangSmith</li><li>Cut latency with Groq-hosted LLaMA-3 inference</li><li>Wrote Python Lambda functions for backend automation</li></ul></div>
+<div><p class="ct">Full stack</p><ul><li>Built React and Flask dashboards for a platform with thousands of active users</li><li>Automated channel-wise S3 EPUB downloads</li><li>Cut manual effort by about 60% with Python and SQL jobs</li><li>Resolved 150+ bugs across product, QA and design</li></ul></div></div></div>
+<p class="ct" style="margin-top:2.5rem">AWS and DevOps</p><div class="aws" id="aws"></div></div></section>
 
-  <section id="education">
-    <h2>Education and research</h2>
-    <div class="ed" style="margin-top:1.2rem">
-      <div><h3>MCA, St. Joseph’s College (Autonomous), Trichy</h3><small>2021 to 2023, CGPA 8.2</small></div>
-      <div><h3>BCA, Parvathy’s Arts and Science College, Dindigul</h3><small>2018 to 2021, CGPA 8.9</small></div>
-      <div><h3>Medical Bot, MCA final-year project</h3><p>A health chatbot using Dialogflow, Flask, Hugging Face models and FAISS vector search. <a href="https://github.com/Sh-lab7777/medical-chatbot" target="_blank" rel="noopener">GitHub</a></p></div>
-      <div><h3>QoS Monitoring in Edge Computing</h3><p>Frontend developer on the research project; resolved 150+ UI and UX issues. Presented the paper at ICRTCCB 2023, Sethu Institute of Technology.</p></div>
-      <div><h3>Secure Cloud Storage Auditing using PDP</h3><p>Verified file integrity on untrusted servers with a challenge-response protocol and hash-based checks, without retrieving the full data.</p></div>
-      <div><h3>Student Information System</h3><p>PHP and MySQL platform for registration, grades, attendance and admin reporting.</p></div>
-    </div>
-  </section>
+<section id="education" class="alt"><div class="w rv"><p class="lab">Education</p><h2>Education and <span class="g">research</span></h2>
+<div class="rg"><div class="card"><h3>Degrees</h3>
+<div class="li"><span>🎓</span><span><b>MCA</b>, St. Joseph’s College (Autonomous), Trichy, 2021 to 2023, CGPA 8.2</span></div>
+<div class="li"><span>🎓</span><span><b>BCA</b>, Parvathy’s Arts and Science College, Dindigul, 2018 to 2021, CGPA 8.9</span></div></div>
+<div class="card"><h3>Research and academic</h3>
+<div class="li"><span>🩺</span><span><b>Medical Bot</b>, final-year health chatbot with Dialogflow, Hugging Face and FAISS (<a href="https://github.com/Sh-lab7777/medical-chatbot" target="_blank" rel="noopener" style="color:var(--c)">GitHub</a>)</span></div>
+<div class="li"><span>📡</span><span><b>QoS Monitoring in Edge Computing</b>, paper presented at ICRTCCB 2023</span></div>
+<div class="li"><span>🔐</span><span><b>Cloud storage auditing with PDP</b>, challenge-response integrity checks</span></div>
+<div class="li"><span>🏫</span><span><b>Student Information System</b>, PHP and MySQL</span></div></div></div></div></section>
 
-  <section id="certs">
-    <h2>Certifications and talks</h2>
-    <ul style="margin-top:1rem">
-      <li>Building with the Claude API, Anthropic</li>
-      <li>Project Management Associate, insiderOne University, November 2026</li>
-      <li>Project Management Foundational, insiderOne Verified Skill Receipt, November 2026</li>
-      <li>Complete Python Pro Bootcamp, Udemy, 2022</li>
-      <li>Google UI/UX Design, Coursera, 2023</li>
-      <li>Problem Solving Certification, HackerRank</li>
-      <li>Led a 3-day seminar on AI and machine learning at Peri Institute of Technology</li>
-    </ul>
-  </section>
+<section id="certs"><div class="w rv"><p class="lab">Credentials</p><h2>Certifications and <span class="g">talks</span></h2><div class="cg" id="cg"></div></div></section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p class="sub">I’m looking for AI/ML engineering roles, remote, hybrid or with relocation. If you’re building with LLMs, RAG or agents, write to me.</p>
-    <p><b>shrinejehovah@gmail.com</b><br>+91 9363401873</p>
-    <div class="links">
-      <a class="btn" href="mailto:shrinejehovah@gmail.com">Email</a>
-      <a class="btn alt" href="https://linkedin.com/in/sharan-shriney" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn alt" href="https://github.com/sh-lab7777" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn alt" href="Sharan_Shriney_AI-ML-Engineer.pdf" download>Resume (PDF)</a>
-    </div>
-    <footer>© 2026 Sharan Shriney D, Dindigul, Tamil Nadu</footer>
-  </section>
-</main>
+<section id="contact" class="alt"><div class="w rv"><p class="lab">Get in touch</p><h2>Let’s <span class="g">connect</span></h2>
+<div class="card cc"><p style="color:var(--m)">I’m looking for AI/ML engineering roles, remote, hybrid or with relocation, based in <strong style="color:var(--t)">Dindigul, Tamil Nadu</strong>. If you’re building with LLMs, RAG or agents, write to me.</p>
+<p style="margin-top:1rem">shrinejehovah@gmail.com<br/>+91 9363401873</p>
+<div class="cl"><a class="btn b1" href="mailto:shrinejehovah@gmail.com">Email</a><a class="btn o" href="https://linkedin.com/in/sharan-shriney" target="_blank" rel="noopener">LinkedIn</a><a class="btn o" href="https://github.com/sh-lab7777" target="_blank" rel="noopener">GitHub</a><a class="btn b2" href="Sharan_Shriney_AI-ML-Engineer.pdf" download>Resume</a></div></div></div></section>
+
+<footer><span class="logo">Sharan Shriney D</span><span>AI/ML Engineer, Pustaka Media, Dindigul, Tamil Nadu</span><span>© 2026</span></footer>
 
 <script>
 const G='https://github.com/Sh-lab7777/';
+const SK=[['LLM models',0,['OpenAI GPT-3.5/4','Claude','Groq LLaMA-3/4','gpt-oss','Qwen','Gemma 4 31B','Gemini Vision','Sarvam AI']],
+['Agents and RAG',1,['LangChain','LangGraph','LangSmith','MCP','Bedrock KB','FAISS','DuckDB','Vector search']],
+['ML and evaluation',2,['PyTorch','Transformers','scikit-learn','CNNs','LLM-as-judge','Prompt regression tests','F1 and confusion matrix']],
+['Backend and cloud',3,['Python','Flask','FastAPI','REST APIs','Node.js','AWS Lambda','EC2','S3','RDS','MySQL','Docker']],
+['Frontend and desktop',4,['React','TypeScript','JavaScript','Electron','Streamlit','CustomTkinter','HTML and CSS']],
+['Ways of working',5,['Git','pytest','Project planning','Stakeholder management']]];
+document.getElementById('sk').innerHTML=SK.map(s=>`<div class="card"><p class="ct">${s[0]}</p><div class="tg">${s[2].map(x=>`<span class="c${s[1]}">${x}</span>`).join('')}</div></div>`).join('');
 const P=[
-{y:'2026',t:'LLM Evaluation Harness',k:'AI and ML, open source',c:'ml oss',n:1,d:'Runs the same 20-case Tamil and English test set through several models and scores each with automated checks, an LLM judge and latency. A compare step exits with an error when a prompt change causes a regression, so changes can be gated.',g:'Python, Groq API, pytest, LLM-as-judge',l:G+'llm-eval-harness'},
-{y:'2026 to now',t:'AI-integrated mobile app and web platform',k:'Production',c:'pro',d:'Serverless Python backend on AWS Lambda exposing REST APIs that a mobile app and a React and TypeScript website both use, with an AI chatbot that answers user queries.',g:'Python, AWS Lambda, React, TypeScript',s:'In development'},
-{y:'2026',t:'Multilingual Document Classifier',k:'AI and ML',c:'ml',d:'Fine-tunes bert-base-multilingual-cased in PyTorch, with a custom Dataset, DataLoader and manual training loop, to sort OCR’d invoices, agreements, reports and letters in Tamil and English. Evaluated with per-class F1 and a confusion matrix; a CNN stretch model grades scan quality.',g:'PyTorch, Transformers, scikit-learn, torchvision'},
-{y:'2024 to 2025',t:'ArthaAI, natural-language interface for Tally Prime',k:'Production',c:'pro',d:'Desktop app that lets non-accountants query live financials, create invoices and generate P&L and balance sheets in plain English. Uses 32 custom MCP tools, Gemma 4 31B and DuckDB caching, with export to Excel, Word and PDF. Data stays local.',g:'Electron, Node.js, MCP, Gemma 4 31B, DuckDB',l:G+'arthaai'},
-{y:'2024 to 2025',t:'AI Smart OCR',k:'Production',c:'pro',d:'Windows app that turns scanned books, PDFs and ZIP archives into formatted Word documents using four OCR engines in parallel. Supports 22 Indian languages through Sarvam AI and detects Tamil custom-font PDFs to route fonts correctly. Packaged as a standalone EXE.',g:'Python, CustomTkinter, Gemini Vision, Claude Vision, Sarvam AI, PyMuPDF',l:G+'AI-Smart-OCR'},
-{y:'2024 to 2025',t:'BookCraft Pro',k:'Production',c:'pro',d:'Generates Tamil and English back-cover descriptions from EPUB, DOCX and TXT files. Falls back automatically between Groq LLaMA-4 and Claude, processes batches with live status and exports to TXT, DOCX and CSV. Rated 9/10 on AI integration quality by internal reviewers.',g:'Python, CustomTkinter, Groq LLaMA-4, Claude API',l:G+'AI-description-generator'},
-{y:'2024',t:'Pustaka Agreement Generator',k:'Production',c:'pro',d:'Extracts author details from uploaded PDF, DOCX or TXT files with the Claude API and fills Word templates for 7 agreement types, replacing manual form-filling.',g:'Python, Streamlit, Claude API, python-docx',l:G+'AI-agreement-generator'},
-{y:'2024',t:'Enterprise chatbot with MCP and RAG',k:'Production',c:'pro',d:'Chatbot for enterprise teams built on MCP, LangChain and LangGraph with Claude and GPT-4, grounded by Amazon Bedrock Knowledge Base and FAISS and traced with LangSmith.',g:'MCP, LangChain, LangGraph, Bedrock, FAISS, LangSmith',s:'Internal tool at Pustaka Media'},
-{y:'Personal',t:'InvoiceFlow',k:'Open source',c:'oss',d:'Billing SaaS with JWT auth, GST calculation, PDF invoices, email delivery, Stripe payment tracking and a Groq assistant that answers invoice questions in Tamil and English. Dockerized.',g:'FastAPI, React, PostgreSQL, Stripe, Groq, Docker',l:G+'invoiceflow'},
-{y:'Personal',t:'OpenEnv support agent',k:'AI and ML, open source',c:'ml oss',d:'Reinforcement learning environment where an agent learns to classify, prioritize and resolve support tickets, with step, reset and state endpoints, Docker deployment and rubric-based rewards.',g:'Python, FastAPI, Docker, Hugging Face Spaces',l:G+'openenv-support'},
-{y:'Personal',t:'Finance AI Tracker',k:'AI and ML, open source',c:'ml oss',d:'Categorizes bank transactions with TF-IDF and Naive Bayes and shows spending insights, budgets and trends in a Streamlit dashboard.',g:'Python, scikit-learn, Streamlit',l:G+'finance-ai-tracker'},
-{y:'Personal',t:'Sentiment Analysis',k:'AI and ML, open source',c:'ml oss',d:'Compares Logistic Regression, SVM, Naive Bayes, Random Forest and Gradient Boosting on TF-IDF features, with word-influence charts and batch CSV prediction.',g:'Python, scikit-learn, NLTK, Streamlit',l:G+'sentiment-analysis-nlp'}
-];
-const rows=document.getElementById('rows');
-rows.innerHTML=P.map((p,i)=>`<details class="row" data-c="${p.c}"${i===0?' open':''}><summary><span class="y">${p.y}</span><span class="t">${p.t}${p.n?'<span class="new">New</span>':''}</span><span class="k">${p.k}</span></summary><div class="b"><p>${p.d}</p><p class="g">${p.g}</p>${p.l?`<a href="${p.l}" target="_blank" rel="noopener">View on GitHub</a>`:(p.s?`<span class="k">${p.s}</span>`:'')}</div></details>`).join('');
-document.getElementById('chips').addEventListener('click',e=>{
-  const b=e.target.closest('button');if(!b)return;
-  document.querySelectorAll('#chips button').forEach(x=>x.setAttribute('aria-pressed',x===b));
-  const f=b.dataset.f;
-  rows.querySelectorAll('.row').forEach(r=>{r.hidden=!(f==='all'||r.dataset.c.split(' ').includes(f))});
-});
-const links=[...document.querySelectorAll('nav a')];
-const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))})},{rootMargin:'-30% 0px -60% 0px'});
-document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
+['2026','🧪','LLM Evaluation Harness','Runs one 20-case Tamil and English test set through several models, scoring each on automated checks, an LLM judge and latency. A compare step fails when a prompt change regresses quality.','Python,Groq API,pytest,LLM-as-judge','ml oss',G+'llm-eval-harness',1],
+['2026 to now','📱','AI mobile app and web platform','Serverless Python backend on AWS Lambda serving REST APIs to a mobile app and a React and TypeScript website, with an AI chatbot for user queries.','Python,AWS Lambda,React,TypeScript','pro','','In development'],
+['2026','🧠','Multilingual Document Classifier','Fine-tunes multilingual BERT in PyTorch with a custom training loop to classify OCR’d invoices, agreements, reports and letters, with per-class F1 and a confusion matrix.','PyTorch,Transformers,scikit-learn,torchvision','ml','',''],
+['2024 to 2025','💰','ArthaAI','Natural-language interface to Tally Prime with 32 custom MCP tools, Gemma 4 31B and DuckDB caching. Creates invoices and reports from plain English; exports to Excel, Word and PDF.','Electron,Node.js,MCP,Gemma 4 31B,DuckDB','pro',G+'arthaai'],
+['2024 to 2025','🔍','AI Smart OCR','Turns scanned books, PDFs and ZIPs into Word documents with four OCR engines in parallel, 22 Indian languages through Sarvam AI and Tamil custom-font detection.','Python,Gemini Vision,Claude Vision,Sarvam AI,PyMuPDF','pro',G+'AI-Smart-OCR'],
+['2024 to 2025','📚','BookCraft Pro','Bilingual Tamil and English back-cover descriptions with Groq LLaMA-4 and Claude fallback, batch processing and TXT, DOCX and CSV export. Rated 9/10 by internal reviewers.','Python,CustomTkinter,Groq,Claude API','pro',G+'AI-description-generator'],
+['2024','📄','Pustaka Agreement Generator','Extracts author details from PDF, DOCX or TXT with the Claude API and fills Word templates for 7 agreement types.','Python,Streamlit,Claude API,python-docx','pro',G+'AI-agreement-generator'],
+['2024','🤖','Enterprise chatbot, MCP and RAG','Chatbot on MCP, LangChain and LangGraph with Claude and GPT-4, grounded by Bedrock Knowledge Base and FAISS and traced in LangSmith.','MCP,LangGraph,Bedrock,FAISS,LangSmith','pro','','Internal, Pustaka Media'],
+['Personal','🧾','InvoiceFlow','Billing SaaS with JWT auth, GST, PDF invoices, Stripe tracking and a Groq assistant answering invoice questions in Tamil and English.','FastAPI,React,PostgreSQL,Stripe,Docker','oss',G+'invoiceflow'],
+['Personal','🎫','OpenEnv support agent','Reinforcement learning environment where an agent learns to classify, prioritize and resolve support tickets, with rubric-based rewards.','Python,FastAPI,Docker,HF Spaces','ml oss',G+'openenv-support'],
+['Personal','📊','Finance AI Tracker','Auto-categorizes bank transactions with TF-IDF and Naive Bayes; Streamlit dashboard with trends and budgets.','Python,scikit-learn,Streamlit','ml oss',G+'finance-ai-tracker'],
+['Personal','🎭','Sentiment Analysis','Benchmarks five classical models on TF-IDF features with word-influence charts and batch CSV prediction.','Python,scikit-learn,NLTK,Streamlit','ml oss',G+'sentiment-analysis-nlp']];
+const pj=document.getElementById('pj');
+pj.innerHTML=P.map(p=>`<article class="card pc" data-c="${p[5]}"><div class="pt"><span>${p[1]}</span><span class="yr">${p[0]}${p[7]===1?'<span class="new">new</span>':''}</span></div><h3>${p[2]}</h3><p>${p[3]}</p><div class="tg">${p[4].split(',').map((x,i)=>`<span class="c${i%6}">${x}</span>`).join('')}</div>${p[6]?`<a class="lk" href="${p[6]}" target="_blank" rel="noopener">GitHub</a>`:(p[7]&&p[7]!==1?`<span class="st">${p[7]}</span>`:'')}</article>`).join('');
+document.getElementById('tabs').onclick=e=>{const b=e.target.closest('button');if(!b)return;
+  document.querySelectorAll('#tabs button').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  pj.querySelectorAll('.pc').forEach(c=>{c.hidden=!(b.dataset.f==='all'||c.dataset.c.split(' ').includes(b.dataset.f));c.style.animation='none';c.offsetHeight;c.style.animation=''})};
+document.getElementById('aws').innerHTML=[['EC2 and AMI','Instances and custom AMIs for repeatable setups'],['ALB and Auto Scaling','Load balancing for high-traffic workloads'],['CloudWatch and SNS','Dashboards, alarms and alerts'],['S3, EBS and EFS','Storage, versioning and shared file systems'],['Route 53','DNS routing and health checks'],['Lambda','Python serverless functions for backend and LLM tasks']].map(a=>`<div class="card"><b>${a[0]}</b><span>${a[1]}</span></div>`).join('');
+document.getElementById('cg').innerHTML=[['🏆','Building with the Claude API','Anthropic, official certification'],['📋','Project Management Associate','insiderOne University, Nov 2026'],['✅','Project Management Foundational','insiderOne skill receipt, Nov 2026'],['🐍','Complete Python Pro Bootcamp','Udemy, 2022'],['🎨','Google UI/UX Design','Coursera, 2023'],['💻','Problem Solving','HackerRank'],['🎤','AI and ML seminar speaker','Peri Institute of Technology, 3 days'],['📜','Research paper, ICRTCCB 2023','Sethu Institute of Technology']].map(c=>`<div class="card"><b>${c[0]} ${c[1]}</b><span>${c[2]}</span></div>`).join('');
+document.getElementById('hc').insertAdjacentHTML('beforebegin','');
+const R=['AI/ML Engineer','LLM agents builder','RAG architect','Full stack engineer on AWS'],ty=document.getElementById('ty');let ri=0,ci=0,d=0;
+(function t(){const w=R[ri];ty.textContent=w.slice(0,ci);if(!d&&ci===w.length){d=1;return setTimeout(t,1800)}if(d&&!ci){d=0;ri=(ri+1)%R.length;return setTimeout(t,350)}ci+=d?-1:1;setTimeout(t,d?35:80)})();
+const hc=document.getElementById('hc');
+hc.parentElement.onmousemove=e=>{const r=hc.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;hc.style.transform=`rotateY(${x*14}deg) rotateX(${-y*14}deg)`};
+hc.parentElement.onmouseleave=()=>hc.style.transform='';
+document.addEventListener('mousemove',e=>{const c=e.target.closest('.card');if(c){const r=c.getBoundingClientRect();c.style.setProperty('--x',e.clientX-r.left+'px');c.style.setProperty('--y',e.clientY-r.top+'px')}});
+addEventListener('scroll',()=>{document.getElementById('bar').style.width=scrollY/(document.body.scrollHeight-innerHeight)*100+'%'});
+const links=[...document.querySelectorAll('nav li a:not(.cta)')];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('on');
+  e.target.querySelectorAll('[data-n]').forEach(c=>{const n=+c.dataset.n,t0=performance.now();(function s(t){const p=Math.min((t-t0)/1500,1);c.textContent=(p*n).toFixed(n%1?1:0)+'+';if(p<1)requestAnimationFrame(s)})(t0)});
+  const id=e.target.closest('section')?.id;links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+id))}),{threshold:.15});
+document.querySelectorAll('.rv,.stats').forEach(x=>io.observe(x));
+const cv=document.getElementById('fx'),cx=cv.getContext('2d');let W,H;const pts=[];
+function rs(){W=cv.width=innerWidth;H=cv.height=innerHeight}rs();addEventListener('resize',rs);
+for(let i=0;i<70;i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.3,vy:(Math.random()-.5)*.3,c:Math.random()>.5?'236,72,153':'79,142,247'});
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)(function a(){cx.clearRect(0,0,W,H);pts.forEach((p,i)=>{p.x=(p.x+p.vx+W)%W;p.y=(p.y+p.vy+H)%H;cx.fillStyle=`rgba(${p.c},.5)`;cx.fillRect(p.x,p.y,1.6,1.6);for(let j=i+1;j<pts.length;j++){const q=pts[j],dx=p.x-q.x,dy=p.y-q.y,dd=dx*dx+dy*dy;if(dd<9000){cx.strokeStyle=`rgba(${p.c},${.09*(1-dd/9000)})`;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}});requestAnimationFrame(a)})();
 </script>
 </body>
 </html>
